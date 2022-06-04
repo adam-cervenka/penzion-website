@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Nový penzion v Čejkovicích, kraji vína, na jižní Moravě.">
+    <meta name="keywords" content="Adalbert, penzion, Čejkovice, Červenka, hotel, ubytování, víno">
+    <meta name="author" content="Adam Červenka">
+    <meta name="robots" content="all">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adalbert penzion Čejkovice</title>
+    <!--<link rel="shortcut icon" href="photos/icons.ico">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal-slideshow.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/modal-slideshow.js"></script>
+    <style>
+      @media only screen and (max-width: 500px) {
+        #name {
+          font-size: 16px;
+        }
+
+        .prev, .next {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Responsive navigation bar -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-1" id="name" href="index.html">&#9733;&#9733;&#9733;&#9733; Adalbert penzion Čejkovice</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-auto">
+                <!-- Dropdown -->
+                <div id="dropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fotogalerie</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown-link">
+                        <li><a class="dropdown-item" href="foto-penzion.html">Penzion a okolí</a></li>
+                        <li><a class="dropdown-item" href="foto-ubytovani.html">Ubytování</a></li>
+                        <li><a class="dropdown-item" href="foto-jidlo.html">Jídlo a víno</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item mx-auto my-auto">
+                <a href="kontakty.html" class="nav-link">Kontakty a odkazy</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-auto">
+                <a href="index.html" class="nav-link">
+                  <img src="icon/czech-flag-64.png" class="lang"> CS
+                </a>
+              </li>
+              <li class="nav-item mx-auto">
+                <a href="en/index.html" class="nav-link">
+                  <img src="icon/uk-flag-64.png" class="lang"> EN
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Ubytování</h1>
+      <!-- Photo gallery -->
+      <div class="row">
+        <div class="col-12 col-md-6 res">
+          <img src="photos/accommodation/DSC05082-HDR-min.jpg" class="gallery mb-4" onclick="openModal(0)">
+          <img src="photos/accommodation/DSC04950-min.jpg" class="gallery mb-4" onclick="openModal(1)">
+          <img src="photos/accommodation/DSC04932-min.jpg" class="gallery mb-4" onclick="openModal(2)">
+          <img src="photos/accommodation/DSC05079-HDR-min.jpg" class="gallery mb-4" onclick="openModal(3)">
+        </div>
+        <div class="col-12 col-md-6 res">
+          <img src="photos/accommodation/pokoj-min.jpg" class="gallery mb-4" onclick="openModal(4)">
+          <img src="photos/accommodation/DSC04929-min.jpg" class="gallery mb-4" onclick="openModal(5)">
+          <img src="photos/accommodation/DSC05377-min.jpg" class="gallery mb-4" onclick="openModal(6)">
+          <img src="photos/accommodation/DSC05185-min.jpg" class="gallery mb-4" onclick="openModal(7)">
+        </div>
+      </div>
+      <!-- Modal slideshow -->
+      <div id="slides" class="modal-slideshow close">
+          <a class="prev" onclick="move(-1)">&#10094;</a>
+          <a class="next" onclick="move(1)">&#10095;</a>
+          <span class="cross" onclick="closeModal()">&times;</span>
+          <span id="indicator"></span>
+          <img src="photos/accommodation/DSC05082-HDR-min.jpg" class="slide">
+          <img src="photos/accommodation/DSC04950-min.jpg" class="slide">
+          <img src="photos/accommodation/DSC04932-min.jpg" class="slide">
+          <img src="photos/accommodation/DSC05079-HDR-min.jpg" class="slide">
+          <img src="photos/accommodation/pokoj-min.jpg" class="slide">
+          <img src="photos/accommodation/DSC04929-min.jpg" class="slide">
+          <img src="photos/accommodation/DSC05377-min.jpg" class="slide">
+          <img src="photos/accommodation/DSC05185-min.jpg" class="slide">
+      </div>
+    </main>
+    <footer class="text-center bg-light text-muted mt-5 mb-0 border-top">
+      <!-- Copyright -->
+      <p class="p-3 mb-0">&#169; 2022 Adam Červenka. Všechna práva vyhrazena.</p>
+    </footer>
+  </body>
+</html>

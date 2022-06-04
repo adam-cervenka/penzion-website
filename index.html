@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Nový penzion v Čejkovicích, kraji vína, na jižní Moravě.">
+    <meta name="keywords" content="Adalbert, penzion, Čejkovice, Červenka, hotel, ubytování, víno">
+    <meta name="author" content="Adam Červenka">
+    <meta name="robots" content="all">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adalbert penzion Čejkovice</title>
+    <!--<link rel="shortcut icon" href="photos/icons.ico">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+      main p {
+        /*text-indent: 30px;*/
+        margin: 0;
+      }
+
+      .row {
+        border-radius: 10px;
+        border: 2px solid darkgoldenrod;
+        margin-bottom: 50px;
+      }
+ 
+      @media only screen and (max-width: 500px) {
+        #name {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Responsive navigation bar -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-1" id="name" href="index.html">&#9733;&#9733;&#9733;&#9733; Adalbert penzion Čejkovice</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-auto">
+                <!-- Dropdown -->
+                <div id="dropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fotogalerie</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown-link">
+                        <li><a class="dropdown-item" href="foto-penzion.html">Penzion a okolí</a></li>
+                        <li><a class="dropdown-item" href="foto-ubytovani.html">Ubytování</a></li>
+                        <li><a class="dropdown-item" href="foto-jidlo.html">Jídlo a víno</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item mx-auto my-auto">
+                <a href="kontakty.html" class="nav-link">Kontakty a odkazy</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-auto">
+                <a href="index.html" class="nav-link">
+                  <img src="icon/czech-flag-64.png" class="lang"> CS
+                </a>
+              </li>
+              <li class="nav-item mx-auto">
+                <a href="en/index.html" class="nav-link">
+                  <img src="icon/uk-flag-64.png" class="lang"> EN
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Automatic slideshow -->
+      <div id="slideshow" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="4"></button>
+        </div>
+        <div class="carousel-inner" style="max-width: 1000px;">
+          <div class="carousel-item active">
+            <img src="photos/penzion/penzion-min.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="photos/penzion/penzion-vzadu-min.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="photos/accommodation/pokoj-min-2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="photos/gastronomy/prostreno-min.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="photos/penzion/vinohrad-hlavni-min.jpg" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1>Adalbert penzion Čejkovice</h1>
+      <div class="row shadow-lg">
+        <div class="column left">
+          <h3>Penzion a okolí</h3>
+          <p>Adalbert penzion Čejkovice je nově postaven. Poskytuje ubytování, stravování, degustace vín, oslavy či firemní akce.</p>
+        </div>
+        <div class="column right">
+          <a href="foto-penzion.html" class="overlay link-dark">Fotky</a>
+          <img src="photos/penzion/penzion-vzadu-min.jpg" class="box-img">
+        </div>
+      </div>
+      <div class="row shadow-lg">
+        <div class="column left">
+          <h3>Ubytování</h3>
+          <p>Dvoulůžkové pokoje s klimatizací, wi-fi, blackout závěsy a prostornými koupelnami. Parkování zdarma, možnost uložení jízdních kol. Veškeré vnitřní prostory jsou nekuřácké. Děkujeme, že respektujete zákaz domácích zvířat v prostorách penzionu.</p>
+        </div>
+        <div class="column right">
+          <a href="foto-ubytovani.html" class="overlay link-dark">Fotky</a>
+          <img src="photos/accommodation/pokoj-min.jpg" class="box-img">
+        </div>
+      </div>
+      <div class="row shadow-lg">
+        <div class="column left">
+          <h3>Jídlo a víno</h3>
+          <p>Podáváme snídaně, možnost dalšího stravování. Zajistíme degustaci vín v prostorách penzionu nebo v rodinném vinařství s prohlídkou vinice. Penzion je vhodný zejména pro skupiny milovníků dobrého jídla a kvalitního vína a také pro menší firemní akce.</p>
+        </div>
+        <div class="column right">
+          <a href="foto-jidlo.html" class="overlay link-dark">Fotky</a>
+          <img src="photos/gastronomy/prostreno-min.jpg" class="box-img">
+        </div>
+      </div>
+    </main>
+    <footer class="text-center bg-light text-muted mt-5 mb-0 border-top">
+      <!-- Copyright -->
+      <p class="p-3 mb-0">&#169; 2022 Adam Červenka. Všechna práva vyhrazena.</p>
+    </footer>
+  </body>
+</html>	
