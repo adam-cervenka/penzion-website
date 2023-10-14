@@ -9,28 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adalbert penzion Čejkovice</title>
-    <!--<link rel="shortcut icon" href="photos/icons.ico">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modal-slideshow.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/modal-slideshow.js"></script>
-    <style>
-      @media only screen and (max-width: 500px) {
-        #name {
-          font-size: 16px;
-        }
-
-        .prev, .next {
-          padding: 10px;
-        }
-      }
-    </style>
   </head>
   <body>
-    <!-- Responsive navigation bar -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top border-bottom">
+      <!-- Responsive navigation bar -->
+      <nav class="navbar navbar-expand-lg bg-light navbar-light  fixed-top border-bottom">
         <div class="container-fluid">
           <a class="navbar-brand ms-1" id="name" href="index.html">&#9733;&#9733;&#9733;&#9733; Adalbert penzion Čejkovice</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -78,16 +66,14 @@
       <!-- Photo gallery -->
       <div class="row">
         <div class="col-12 col-md-6 res">
-          <img src="photos/penzion/penzion-min.jpg" class="gallery mb-4" onclick="openModal(0)">
-          <img src="photos/penzion/vyhled-min.jpg" class="gallery mb-4" onclick="openModal(1)">
-          <img src="photos/penzion/PICT0014-min.jpg" class="gallery mb-4" onclick="openModal(2)">
-          <img src="photos/penzion/DSC_0295-min.jpg" class="gallery mb-4" onclick="openModal(3)">
+          <img src="photos/penzion/vyhled-min.jpg" class="gallery mb-4" onclick="openModal(0)">
+          <img src="photos/penzion/PICT0014-min.jpg" class="gallery mb-4" onclick="openModal(1)">
+          <img src="photos/penzion/DSC_0295-min.jpg" class="gallery mb-4" onclick="openModal(2)">
         </div>
         <div class="col-12 col-md-6 res">
-          <img src="photos/penzion/penzion-vzadu-min.jpg" class="gallery mb-4" onclick="openModal(4)">
-          <img src="photos/penzion/20211210_114344-min.jpg" class="gallery mb-4" onclick="openModal(5)">
-          <img src="photos/penzion/PICT0018-min.jpg" class="gallery mb-4" onclick="openModal(6)">
-          <img src="photos/penzion/vinohrad-min.jpg" class="gallery mb-4" onclick="openModal(7)">
+          <img src="photos/penzion/20211210_114344-min.jpg" class="gallery mb-4" onclick="openModal(3)">
+          <img src="photos/penzion/PICT0018-min.jpg" class="gallery mb-4" onclick="openModal(4)">
+          <img src="photos/penzion/vinohrad-min.jpg" class="gallery mb-4" onclick="openModal(5)">
         </div>
       </div>
       <!-- Modal slideshow -->
@@ -96,11 +82,9 @@
           <a class="next" onclick="move(1)">&#10095;</a>
           <span class="cross" onclick="closeModal()">&times;</span>
           <span id="indicator"></span>
-          <img src="photos/penzion/penzion-min.jpg" class="slide">
           <img src="photos/penzion/vyhled-min.jpg" class="slide">
           <img src="photos/penzion/PICT0014-min.jpg" class="slide">
           <img src="photos/penzion/DSC_0295-min.jpg" class="slide">
-          <img src="photos/penzion/penzion-vzadu-min.jpg" class="slide">
           <img src="photos/penzion/20211210_114344-min.jpg" class="slide">
           <img src="photos/penzion/PICT0018-min.jpg" class="slide">
           <img src="photos/penzion/vinohrad-min.jpg" class="slide">
@@ -111,4 +95,4 @@
       <p class="p-3 mb-0">&#169; 2022 Adam Červenka. Všechna práva vyhrazena.</p>
     </footer>
   </body>
-</html>	
+</html>
