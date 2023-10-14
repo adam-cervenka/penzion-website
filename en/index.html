@@ -2,16 +2,15 @@
 <html lang="cs">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Nový penzion v Čejkovicích, kraji vína, na jižní Moravě.">
-    <meta name="keywords" content="Adalbert, penzion, Čejkovice, Červenka, hotel, ubytování, víno">
+    <meta name="description" content="New guesthouse in Čejkovice in South-Moravian wine region.">
+    <meta name="keywords" content="Adalbert, penzion, guesthouse, Čejkovice, Červenka, hotel, accommodation, wine">
     <meta name="author" content="Adam Červenka">
     <meta name="robots" content="all">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adalbert penzion Čejkovice</title>
-    <!--<link rel="shortcut icon" href="photos/icons.ico">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
       main p {
@@ -27,7 +26,118 @@
     </style>
   </head>
   <body>
-    <p>This website is still in the process of development, but will be availbale soon.</p>
-    <a href="../index.html">Go back</a>
+    <!-- Responsive navigation bar -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-1" id="name" href="index.html">&#9733;&#9733;&#9733;&#9733; Adalbert penzion Čejkovice</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-auto">
+                <!-- Dropdown -->
+                <div id="dropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">Photo gallery</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown-link">
+                        <li><a class="dropdown-item" href="photo-penzion.html">Guesthouse and surroundings</a></li>
+                        <li><a class="dropdown-item" href="photo-accommodation.html">Accommodation</a></li>
+                        <li><a class="dropdown-item" href="photo-gastronomy.html">Gastronomy and wine</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item mx-auto my-auto">
+                <a href="contacts.html" class="nav-link">Contacts and links</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-auto">
+                <a href="../index.html" class="nav-link">
+                  <img src="../icon/czech-flag-64.png" class="lang"> CS
+                </a>
+              </li>
+              <li class="nav-item mx-auto">
+                <a href="index.html" class="nav-link">
+                  <img src="../icon/uk-flag-64.png" class="lang"> EN
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Automatic slideshow -->
+      <div id="slideshow" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3"></button>
+        </div>
+        <div id="j" class="carousel-inner" style="max-width: 1000px;">
+          <div class="carousel-item active">
+            <img src="../photos/penzion/penzion-min.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="../photos/accommodation/pokoj-min-2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="../photos/gastronomy/prostreno-min.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="../photos/penzion/vinohrad-hlavni-min.jpg" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1>Adalbert penzion Čejkovice</h1>
+      <div class="row shadow-lg">
+        <div class="column left">
+          <h3>Guesthouse and surroundings</h3>
+          <p>Adalbert penzion Čejkovice is a new guesthouse, offering accommodation with boarding, wine tasting and a place for a celebration or teambuilding.</p>
+        </div>
+        <div class="column right">
+          <a href="photo-penzion.html" class="overlay link-dark">Photos</a>
+          <img src="../photos/penzion/vinohrad-min.jpg" class="box-img">
+        </div>
+      </div>
+      <div class="row shadow-lg">
+        <div class="column left">
+          <h3>Accommodation</h3>
+          <p>Double rooms with air conditionning, wi-fi connection, blackout curtains and spacious bathrooms. Parking is for free, bicycles can be stored inside. All indoor rooms are nonsmoking. Thank you for obeying the ban of pets in the guesthouse.</p>
+        </div>
+        <div class="column right">
+          <a href="photo-accommodation.html" class="overlay link-dark">Photos</a>
+          <img src="../photos/accommodation/pokoj-min.jpg" class="box-img">
+        </div>
+      </div>
+      <div class="row shadow-lg">
+        <div class="column left">
+          <h3>Food and wine</h3>
+          <p>We serve breakfast with a possibility of additional boarding. We offer wine tasting in the guesthouse or in a family winery, surrounded by vineyards. Our guesthouse is suitable especially for groups of food or wine lovers and also for smaller work events.</p>
+        </div>
+        <div class="column right">
+          <a href="photo-gastronomy.html" class="overlay link-dark">Photos</a>
+          <img src="../photos/gastronomy/prostreno-min.jpg" class="box-img">
+        </div>
+      </div>
+    </main>
+    <footer class="text-center bg-light text-muted mt-5 mb-0 border-top">
+      <!-- Copyright -->
+      <p class="p-3 mb-0">&#169; 2022 Adam Červenka. All rights reserved.</p>
+    </footer>
   </body>
 </html>
